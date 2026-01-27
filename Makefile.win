@@ -4,8 +4,8 @@
 CPP      = g++.exe -std=c++11
 CC       = gcc.exe -std=c++11
 WINDRES  = windres.exe
-OBJ      = "Skeleton\ of\ C++.o"
-LINKOBJ  = "Skeleton of C++.o"
+OBJ      = "Skeleton\ of\ C++.o" "Arithmetic\ Operations/Addition\ of\ Two\ Numbers.o"
+LINKOBJ  = "Skeleton of C++.o" "Arithmetic Operations/Addition of Two Numbers.o"
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -26,3 +26,6 @@ $(BIN): $(OBJ)
 
 "Skeleton\ of\ C++.o": Skeleton\ of\ C++.cpp
 	$(CPP) -c "Skeleton of C++.cpp" -o "Skeleton of C++.o" $(CXXFLAGS)
+
+"Arithmetic\ Operations/Addition\ of\ Two\ Numbers.o": Arithmetic\ Operations/Addition\ of\ Two\ Numbers.cpp
+	$(CPP) -c "Arithmetic Operations/Addition of Two Numbers.cpp" -o "Arithmetic Operations/Addition of Two Numbers.o" $(CXXFLAGS)
