@@ -1,0 +1,9 @@
+*.exe
+*.obj
+*.o
+*.gch
+*.manifest
+*.tmp
+*.log
+Debug/
+Release/
