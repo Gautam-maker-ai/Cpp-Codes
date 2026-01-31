@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.exe
 *.obj
 *.o
@@ -7,3 +8,15 @@
 *.log
 Debug/
 Release/
+=======
+
+*.exe
+*.obj
+*.o
+*.gch
+*.manifest
+*.tmp
+*.log
+Debug/
+Release/
+>>>>>>> 2a8324c (Added Distances between two points)
