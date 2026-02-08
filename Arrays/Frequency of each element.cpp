@@ -20,6 +20,7 @@ int main()
 	for(auto x:freq)
 	{
 		cout<<x.first<<"=>"<<x.second<<endl;
+		//Here x.first is key and x.second is value
 	}
 	return 0;
 }
