@@ -24,7 +24,7 @@ string compressString(string s)
 }
 int main()
 {
-	string s="aabbcccjbdchhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh";
+	string s="aabbcc";
 	cout<<compressString(s);
 	return 0;
 }
