@@ -21,7 +21,6 @@ for(char c:s2)
 	}
 	freq[c]--;
  }
-
 	return true;
 }
 int main()
