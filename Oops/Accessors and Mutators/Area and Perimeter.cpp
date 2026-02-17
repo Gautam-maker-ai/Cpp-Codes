@@ -48,3 +48,7 @@ int main()
 	cout<<"Perimeter is:"<<r.perimeter()<<endl;
 	return 0;
 }
+//Mutator methods are used to set or modify the values of data members (like length and breadth). And also called as setter function
+//Accessor methods are used to retrieve/read the values of data members. And also called as getter function
+//Setter don't have to be limited to length and breadth they can modify any data member
+//Getter usually don't modify data they just return it

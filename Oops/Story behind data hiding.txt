@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 A Story Behind Data Hiding
 
 Suppose we have a class Rectangle in which length and breadth are declared as public data members, and functions area() and perimeter() are also declared as public.
@@ -9,3 +10,17 @@ eading to incorrect behavior.
 Therefore, this situation represents mishandling of data, indicating that the class is not properly written. To prevent such misuse, data hiding is necessary.
 By declaring data members as private and providing public setter functions with validation, we ensure that only valid data is stored inside the object. This protects the internal state of the object and guarantees correct behavior.
 Hence, data hiding improves data security, reliability, and correctness of a class.
+=======
+A Story Behind Data Hiding
+
+Suppose we have a class Rectangle in which length and breadth are declared as public data members, and functions area() and perimeter() are also declared as public.
+Now, when an object of the Rectangle class is created, the user can directly assign values to length and breadth.Since these data members are public, the class provides
+no control or validation over the values being assigned.The problem arises when a user assigns negative values to length or breadth. As a result, the area() or perimeter() function
+may return incorrect or meaningless results, such as a negative area, which is logically invalid for a rectangle.Here, the user is not responsible for this mistake because the user
+does not know the internal constraints of the class. The responsibility lies with the programmer and the class design. A poorly designed class allows invalid data to enter the system,
+reading to incorrect behavior.
+Therefore, this situation represents mishandling of data, indicating that the class is not properly written. To prevent such misuse, data hiding is necessary.
+By declaring data members as private and providing public setter functions with validation, we ensure that only valid data is stored inside the object. This protects the internal state of the object and guarantees correct behavior.
+
+Hence, data hiding improves data security, reliability, and correctness of a class.
+>>>>>>> ff79dfc4b8d87dfb08122ebcbdf87a6d5ce9f98b
