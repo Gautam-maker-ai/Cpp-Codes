@@ -23,7 +23,7 @@ class Student
 int main()
 {
   Student s;
-  s.setMarks(1);
+  s.setMarks(65);
   cout<<"Marks Are:"<<s.getMarks()<<endl;
   return 0;	
 }
