@@ -6,13 +6,13 @@ class Rectangle
 		    int length;
 		    int breadth;
 	public:
-		   Rectangle(int l=0,int b=0)
+		   Rectangle(int l=0,int b=0)//Constructor
 		   {
 		   	setLength(l);
 		   	setBreadth(b);
 		   	cout<<"Rectangle Constructed"<<endl;
 		   }
-		   int setLength(int l)
+		   void setLength(int l)//Mutator
 		   {
 		   	if(l>0)
 		   	{
@@ -23,11 +23,11 @@ class Rectangle
 				cout<<"Length Cannot be negative";
 			}
 		   }
-		   int getLength()
+		   int getLength()//Accessor
 		   {
 		   	return length;
 		   }
-		   int setBreadth(int b)
+		   void setBreadth(int b)//Mutator
 		   {
 		   	if(b>0)
 		   	{
@@ -38,30 +38,23 @@ class Rectangle
 				cout<<"Breadth Cannot be negative";
 			}
 		   }
-		   int getBreadth()
+		   int getBreadth()//Accessor
 		   {
 		   	return breadth;
 		   }
-		   int area()
+		   int area()//Facilitator
 		   {
 		   	return length*breadth;
 		   }
-		   int perimeter()
+		   int perimeter()//Facilitator
 		   {
 		   	return 2*(length+breadth);
 		   }
-		   bool isRectangle()
+		   bool isValid()//Enquiry
 		   {
-		   	if(true)
-		   	{
-		   		cout<<"It is a Rectangle";
-			}
-			else
-			{
-				cout<<"Not a Rectangle";
-		    }   
+		   	return (length>0 && breadth>0)
 		   }
-		   ~Rectangle()
+		   ~Rectangle()//Destructor
 		   {
 		   	cout<<"Rectangle Destroyed";
 		   }
@@ -69,11 +62,20 @@ class Rectangle
 int main()
 {
 	Rectangle r1(10,20);
-	cout<<"Length is: "<<r1.getLength()<<endl;
-	cout<<"Breadth is: "<<r1.getBreadth()<<endl;
-	cout<<"Area is: "<<r1.area()<<endl;
-	cout<<"Perimeter is: "<<r1.perimeter()<<endl;
+	cout<<"Length is:"<<r1.getLength()<<endl;
+	cout<<"Breadth is:"<<r1.getBreadth()<<endl;
+	cout<<"Area is:"<<r1.area()<<endl;
+	cout<<"Perimeter is:"<<r1.perimeter()<<endl;
 	cout<<r1.isRectangle()<<endl;
+	if(r1.isValid())
+	{
+		cout<<"Valid Rectangle"<<endl;;
+	}
+	else
+	{
+		cout<<"Invalid Rectangle"<<endl;
+	}
 	return 0;
 	
 }
+//If You Are Writing Constructors, Accessors, Mutators, Facilitator, Enquiry, Destructors Then You Are Writing Perfect Class.
