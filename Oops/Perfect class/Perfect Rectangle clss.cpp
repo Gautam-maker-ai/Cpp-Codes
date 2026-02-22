@@ -12,7 +12,7 @@ class Rectangle
 		   	setBreadth(b);
 		   	cout<<"Rectangle Constructed"<<endl;
 		   }
-		   int setLength(int l)
+		   void setLength(int l)
 		   {
 		   	if(l>0)
 		   	{
@@ -27,7 +27,7 @@ class Rectangle
 		   {
 		   	return length;
 		   }
-		   int setBreadth(int b)
+		   void setBreadth(int b)
 		   {
 		   	if(b>0)
 		   	{
