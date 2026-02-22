@@ -57,3 +57,7 @@ int main()
 	cout<<"Perimeter is:"<<r.perimeter()<<endl;
 	return 0;
 }
+//lets suppose our private data members are int length,int breadth.
+//Now if we pass parameters of contructor same as data members int length,int breadth so there will ambiguity 
+//To remove this ambiguity we use this pointer 
+//And it will be treated as r.length=length and r.breadth=breadth

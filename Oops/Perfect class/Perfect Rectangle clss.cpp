@@ -12,7 +12,11 @@ class Rectangle
 		   	setBreadth(b);
 		   	cout<<"Rectangle Constructed"<<endl;
 		   }
+<<<<<<< HEAD
 		   void setLength(int l)//Mutator
+=======
+		   void setLength(int l)
+>>>>>>> bfbd9b7a17031782c7125fa2a010246547c844ab
 		   {
 		   	if(l>0)
 		   	{
@@ -27,7 +31,11 @@ class Rectangle
 		   {
 		   	return length;
 		   }
+<<<<<<< HEAD
 		   void setBreadth(int b)//Mutator
+=======
+		   void setBreadth(int b)
+>>>>>>> bfbd9b7a17031782c7125fa2a010246547c844ab
 		   {
 		   	if(b>0)
 		   	{
