@@ -36,3 +36,4 @@ int main()
 //Accessible
 //a).Everything of base class is available in the derived class but if we talk about accessible the private members of the base class is not accessible in the 
 //derived class they are only accessible in base class only
+//There is only way to access the private members is using mutators but directly we cannot.
