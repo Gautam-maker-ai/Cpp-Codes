@@ -56,5 +56,4 @@ int main()
 	cout<<"Age is:"<<s.getAge()<<endl;
 	cout<<"Roll No is:"<<s.getRollNo()<<endl;
 	return 0;
-	
 }
