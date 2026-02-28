@@ -34,5 +34,11 @@ int main()
 //Available
 //a).If the class derived is inheriting from the base class then everything from the base class will be available in the derived class
 //Accessible
+<<<<<<< HEAD
 //a).Everything of base class is available in the derived class, including private members, but private members of the base class are not accessible in the derived class
 //they are only accessible in the base class.
+=======
+//a).Everything of base class is available in the derived class but if we talk about accessible the private members of the base class is not accessible in the 
+//derived class they are only accessible in base class only
+//There is only way to access the private members is using mutators but directly we cannot.
+>>>>>>> 960a00271a636b880e9db970222423807b25cfb2
