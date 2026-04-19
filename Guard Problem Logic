@@ -1,0 +1,78 @@
+#include<iostream>
+using namespace std;
+class theGuardSystem
+{
+	private:
+		    int safeDoor;
+		    bool isTruthful;
+	public:
+		   theGuardSystem(int door, bool truth)
+		   {
+		   	safeDoor=door;
+		   	isTruthful=truth;
+		   }
+		   
+		   int guardAnswer()
+		   {
+		   	if(isTruthful)
+		   	{
+		   		return safeDoor;
+			}
+			else
+			{
+				return (safeDoor%3)+1;
+			}
+		   }
+		   
+		   int chooseDoor()
+		   {
+		   	int response=guardAnswer();
+		   	if(isTruthful)
+		   	{
+		   		return response;
+			}
+			else
+			{
+				cout<<"Guard is Lying!"<<endl;
+				cout<<"Safe door is NOT Door "<<response<<endl;
+				return -1;
+			}
+		   }
+		   
+		   void display()
+		   {
+		   	int response=guardAnswer();
+		   	cout<<"Guard says: Door "<<response<<endl;
+		   	
+			int finalChoice=chooseDoor();
+		   	if(finalChoice==-1)
+		   	{
+		   		cout<<"Cannot determine exact safe door!"<<endl;
+			} 
+			else
+			{
+				cout<<"You Should Choose: Door"<<finalChoice<<endl;
+			}
+		   }
+};
+int main()
+{
+	int safeDoor;
+	bool truth;
+	
+	cout<<"Enter Actual Safe Door(1/2/3):";
+	cin>>safeDoor;
+	
+	if(safeDoor<1 || safeDoor>3)
+	{
+		cout<<"Invalid Door input!"<<endl;
+		return 0;
+	}
+	cout<<"Is Guard truthful? :";
+	cin>>truth;
+	
+	theGuardSystem g(safeDoor,truth);
+	g.display();
+	return 0;
+}
+//Is Guard truthful -> 1 for YES and 0 for NO
